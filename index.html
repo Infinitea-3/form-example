@@ -5,44 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Sign Up</title>
-    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="forms-example.js" defer></script>
 </head>
 <body>
-    <div>
-        <p>This is not a real online service! But you should totally
-        fill out the form below and let me know if anything breaks.
-        </p>
-        <p>You know you want to....</p>
+    <div id="left-side">
+        <img src="/Users/nathanrummel/repos/form-example/images/pexels-photo-1400249.jpeg" alt="skyscrapers in an unknown city">
+        <div class="upper-text-block">
+            <h4>Test Form</h4>
+        </div>
+        <div class="lower-text-block">
+            <h4>Photo By Mihai Vlasceanu - Pexels.com</h4>
+        </div>
     </div>
-    <div>
-        <p>Let's Do It!</p>
-        <form action="example.com/path" method="post">
-            <ul>
-                <li>
-                    <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" placeholder="First Name" minlength="2" maxlength="15" name="first_name" required>
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" placeholder="Last Name" minlength="2" maxlength="15" name="last_name" required>
-                </li>
-                <li>
-                    <label for="user_email">Email Address</label>
-                    <input type="email" id="user_email" name="email" placeholder="first.last@example.com">
-                    <label for="user_phone">Phone Number</label>
-                    <input type="tel" id="user_phone" name="phone" placeholder="(502)867-5309">
-                </li>
-                <li>
-                    <label for="user_password">Password</label>
-                    <input type="password" id="user_password" name="password">
-                    <label for="user_password">Confirm Password</label>
-                    <input type="password" id="user_password" name="password">
-                </li>
-            </ul>
-        </form>
-    </div>
-    <div>
-        <button type="submit">Create Account</button>
-        <div>Already have an account? <span>Log in</span></div>
+    <div id="right-side">
+        <div id="top-section">
+            <p>This is not a real online service! But you should totally
+            fill out the form below and let me know if anything breaks.
+            </p>
+            <p>You <i>know</i> you want to....</p>
+        </div>
+        <div id="middle-section">
+            <p>Let's Do It!</p>
+            <form action="example.com/path" method="post">
+                <ul>
+                    <li>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="First Name" minlength="2" maxlength="15" name="first_name" required>
+                    </li>
+                    <li><label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Last Name" minlength="2" maxlength="15" name="last_name" required>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="user_email">Email Address</label>
+                        <input type="email" id="user_email" name="email" placeholder="first.last@example.com">
+                    </li>
+                    <li><label for="user_phone">Phone Number</label>
+                        <input type="tel" id="user_phone" name="phone" placeholder="(502) 867-5309">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="user_password">Password</label>
+                        <input type="password" id="user_password" name="password">
+                    </li>
+                    <li><label for="user_password">Confirm Password</label>
+                        <input type="password" id="user_password" name="password">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div id="bottom-section">
+            <button type="submit">Create Account</button>
+            <div id="login">Already have an account? <span>Log in</span></div>
+        </div>
     </div>
 </body>
 </html>
