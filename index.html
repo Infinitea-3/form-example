@@ -9,16 +9,16 @@
     <script src="forms-example.js" defer></script>
 </head>
 <body>
-    <div id="left-side">
-        <img src="/Users/nathanrummel/repos/form-example/images/pexels-photo-1400249.jpeg" alt="skyscrapers in an unknown city">
+    <div class="left-side">
+        <img src="/Users/nathanrummel/repos/form-example/images/skyscraper.jpeg" alt="skyscrapers in an unknown city">
         <div class="upper-text-block">
-            <h4>Test Form</h4>
+            <h4>VIVIDEO</h4>
         </div>
         <div class="lower-text-block">
-            <h4>Photo By Mihai Vlasceanu - Pexels.com</h4>
+            <h4>Photo By Misael Garcia - Pexels.com</h4>
         </div>
     </div>
-    <div id="right-side">
+    <div class="right-side">
         <div id="top-section">
             <p>This is not a real online service! But you should totally
             fill out the form below and let me know if anything breaks.
@@ -30,17 +30,17 @@
             <form action="example.com/path" method="post">
                 <ul>
                     <li>
-                        <label for="first_name">First Name</label>
+                        <label for="first_name">First Name*</label>
                         <input type="text" id="first_name" placeholder="First Name" minlength="2" maxlength="15" name="first_name" required>
                     </li>
-                    <li><label for="last_name">Last Name</label>
+                    <li><label for="last_name">Last Name*</label>
                         <input type="text" id="last_name" placeholder="Last Name" minlength="2" maxlength="15" name="last_name" required>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <label for="user_email">Email Address</label>
-                        <input type="email" id="user_email" name="email" placeholder="first.last@example.com">
+                        <label for="user_email">Email Address*</label>
+                        <input type="email" id="user_email" name="email" placeholder="first.last@example.com" required>
                     </li>
                     <li><label for="user_phone">Phone Number</label>
                         <input type="tel" id="user_phone" name="phone" placeholder="(502) 867-5309">
@@ -48,17 +48,17 @@
                 </ul>
                 <ul>
                     <li>
-                        <label for="user_password">Password</label>
-                        <input type="password" id="user_password" name="password">
+                        <label for="user_password">Password*</label>
+                        <input type="password" id="user_password" name="password" minlength="6" required>
                     </li>
-                    <li><label for="user_password">Confirm Password</label>
-                        <input type="password" id="user_password" name="password">
+                    <li><label for="user_password">Confirm Password*</label>
+                        <input type="password" id="user_password" name="password" minlength="6" required>
                     </li>
                 </ul>
+                <button type="submit">Create Account</button>
             </form>
         </div>
         <div id="bottom-section">
-            <button type="submit">Create Account</button>
             <div id="login">Already have an account? <span>Log in</span></div>
         </div>
     </div>
