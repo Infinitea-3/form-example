@@ -3,8 +3,8 @@ function validateForm(){
     const field2 = document.getElementById("confirm_password");
 
     if(field1.value===field2.value){
-        alert("Submitting form....");
+        alert("Submitting Form....");
     }else{
-        alert("Please Check That Passwords Match");
+        alert("Please Check That The Passwords Match");
     }
 }

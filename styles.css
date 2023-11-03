@@ -84,6 +84,10 @@ input{
     border: rgb(167, 75, 9) 2px solid;
 }
 
+span{
+    color: rgb(167,75,9);
+}
+
 input:focus{
     outline: none;
     background:#414141;
