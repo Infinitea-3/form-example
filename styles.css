@@ -63,8 +63,8 @@ img{
     padding: 0px;
     filter: drop-shadow(2px 2px 2px #ababab);
     width: min(150vh,100%);
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 form{
@@ -131,6 +131,10 @@ label,input{
     flex-direction: column;
 }
 
+#top-section{
+    max-width: 60%;
+}
+
 #bottom-section{
     display: flex;
     flex-direction: column;
@@ -141,9 +145,10 @@ label,input{
 button{
     border: none;
     color: black;
-    filter: drop-shadow(2px 2px 2px #ababab);
-    margin-bottom: 10px;
-    max-width: 50%
+    filter: drop-shadow(1px 1px 1px #ababab);
+    margin-top: 10px;
+    max-width: 30%;
+    min-width: fit-content;
 }
 
 button:hover{
@@ -151,6 +156,7 @@ button:hover{
     color: white;
 }
 
-span {
+a{
     text-decoration: underline;
+    color: rgb(167,75,9)
 }
