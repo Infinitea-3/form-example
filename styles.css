@@ -1,22 +1,21 @@
+:root{
+    --accent-color: rgb(167, 75, 9);
+    --background-color: rgb(36,36,36);
+    --secondary-color:rgb(45,45,45);
+    --shadow-color:#ababab;
+}
+
 *{
     /*outline: 1px solid red;*/
     color: white;
 }
 
-
 body{
-    background-color: rgb(36, 36, 36);
+    background-color: var(--background-color);
     display:flex;
     flex-direction:row;
     margin: 0px;
     min-height: 100vh;
-}
-
-p{
-    font-weight: bold;
-    font-size: 16pt;
-    margin: 10px;
-    color: white;
 }
 
 img{
@@ -28,7 +27,6 @@ img{
 .left-side{
     position: relative;
     text-align: center;
-    flex-grow: 1
 }
 
 .upper-text-block{
@@ -50,18 +48,25 @@ img{
     white-space: nowrap;
 }
 
+p{
+    font-weight: bold;
+    font-size: 16pt;
+    margin: 10px;
+    color: white;
+}
+
 .right-side{
     display: flex;
-    flex-grow:auto;
+    flex-grow: auto;
 }
 
 #middle-section{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: rgb(45, 45, 45);
+    background-color: var(--secondary-color);
     padding: 0px;
-    filter: drop-shadow(2px 2px 2px #ababab);
+    filter: drop-shadow(2px 2px 2px var(--shadow-color));
     width: min(150vh,100%);
     margin-top: 30px;
     margin-bottom: 30px;
@@ -79,13 +84,9 @@ form{
 
 input{
     box-shadow: none;  
-    border-color: #ababab;
+    border-color: var(--shadow-color);
     background-color:transparent;
-    border: rgb(167, 75, 9) 2px solid;
-}
-
-span{
-    color: rgb(167,75,9);
+    border: var(--accent-color) 2px solid;
 }
 
 input:focus{
@@ -99,7 +100,7 @@ input:hover{
 }
 
 input:invalid{
-    border: rgb(167, 75, 9) 2px solid;
+    border: var(--accent-color) 2px solid;
 }
 
 input:required:valid{
@@ -121,7 +122,6 @@ ul{
     flex-direction: row;
     justify-content: space-between;
     max-width: 350px;
-    min-width: 30%;
     margin: 10px;
     margin-left: -40px;
 }
@@ -136,8 +136,6 @@ label,input{
 }
 
 #bottom-section{
-    display: flex;
-    flex-direction: column;
     max-width: 300px;
     margin-left: 10px;
 }
@@ -145,18 +143,18 @@ label,input{
 button{
     border: none;
     color: black;
-    filter: drop-shadow(1px 1px 1px #ababab);
+    filter: drop-shadow(1px 1px 1px var(--shadow-color));
     margin-top: 10px;
     max-width: 30%;
     min-width: fit-content;
 }
 
 button:hover{
-    background-color: rgb(167, 75, 9);
+    background-color: var(--accent-color);
     color: white;
 }
 
 a{
     text-decoration: underline;
-    color: rgb(167,75,9)
+    color: var(--accent-color);
 }
